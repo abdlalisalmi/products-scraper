@@ -1,0 +1,129 @@
+:root {
+    --back: #151618;
+    --color: #edf2f4;
+    --sec: #edf6f9;
+    --scolor: #06d6a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* NO SELECT + HIGHLIGHT COLOR */
+    user-select: none;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--back);
+}
+
+nav {
+    background-color: var(--back);
+}
+nav div {
+    color: #fff;
+    font-size: 15px !important;
+    padding-bottom: 10px;
+    border-bottom: rgba(255,255,255,.425) solid .5px;
+    box-shadow: 0 15px 35px rgba(104, 104, 104, 0.3);
+}
+nav div .github {
+    color: #fff;
+    font-size: 20px !important;
+    transition: all 0.5s;
+}
+nav div .github:hover {
+    color: var(--scolor);
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px;
+    border-bottom: rgba(255,255,255,.425) solid .3px;
+    margin-bottom: 30px;
+}
+.search input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 13px;
+    width: 90%;
+}
+.search input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+}
+.search button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 10%;
+    text-align: right;
+    transition: all .5s;
+}
+.search button:hover{
+    color: var(--scolor);
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 60vh;
+    color: #fff;
+    background-color: #2c2f33;
+    border-radius: 20px;
+    padding: 15px;
+}
+.result .icon {
+    background-color: #fff;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.result .img{
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 220px;
+    margin-bottom: 5px;
+
+}
+.result h1{
+    color: var(--sec);
+    font-size: 14px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.result p{
+    font-size: 13px;
+    margin: 1px;
+    color: var(--scolor);
+}
+.result p span{
+    font-size: 13px;
+    margin: 1px;
+    color: var(--sec);
+}
+.export-btn {
+    padding: 5px;
+    font-size: 11px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.export-btn:hover {
+    background-color: rgba(255, 255, 255, 0.144);
+}
